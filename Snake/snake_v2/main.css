@@ -1,0 +1,20 @@
+.container{
+    width: 500px;
+    height: 500px;
+    margin: 50px auto;
+    background-color: black;
+
+    padding: 0px;
+    border: solid 2px firebrick;
+}
+
+.box{
+    width: 5px;
+    height: 5px;
+    display: inline-block;
+    float: left;
+}
+
+.boxed{
+    background-color: white;
+}
