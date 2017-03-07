@@ -41,8 +41,10 @@ point();
 
 var kill = function(){
     if(oggy.classList.contains("boxed")){
-        if(!alert("You have scored "+pcount + " and travelled " +distance+" blocks"))
-        window.location.reload();
+        if(!alert("You have scored "+pcount + " and travelled " +distance+" blocks")){
+            clearInterval(interval);
+            window.location.reload();
+        }
     };
 };
 
