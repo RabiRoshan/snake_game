@@ -4,17 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Snake v8</title>
+    <!-- Link our styles from main.css -->
     <link rel="stylesheet" type="text/css" href="main.css" />
   </head>
   <body>
-    <div class="gameContainer" id="gameContainer"></div>
+    <!-- #gameContainer is the main game board-->
+    <div id="gameContainer"></div>
 
+    <!-- #scoreContainer contains the scores  -->
     <div id="scoreContainer">
       <div class="scoreBoard">Food: <span id="pointsEarned">0</span></div>
       <div class="scoreBoard">Blocks: <span id="blocksTravelled">0</span></div>
     </div>
 
-    <div id="mobileControllers">
+    <!-- #onScreenControllers contains the navigation buttons for mobile screens -->
+    <div id="onScreenControllers">
       <button id="leftButton">◀️</button>
       <div>
         <button id="upButton">🔼</button>
@@ -22,6 +26,8 @@
       </div>
       <button id="rightButton">▶️</button>
     </div>
-    <script src="jscript.js"></script>
   </body>
+
+  <!-- #Load our jscript.js containing the game logic -->
+  <script src="jscript.js"></script>
 </html>

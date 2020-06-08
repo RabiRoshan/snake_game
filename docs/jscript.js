@@ -149,7 +149,7 @@ var moveSnakeInterval = setInterval(moveSnake, 80);
 // Call change direction function on keyboard key-down event:
 addEventListener("keydown", e => changeDirection(e.keyCode));
 
-// ON SCREEN BUTTON FOR MOBILE:
+// ON SCREEN CONTROLLERS:
 const leftButton = document.getElementById("leftButton");
 const rightButton = document.getElementById("rightButton");
 const upButton = document.getElementById("upButton");

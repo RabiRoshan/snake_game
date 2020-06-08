@@ -3,7 +3,12 @@ body {
   text-align: center;
 }
 
-.gameContainer {
+/* GAME BOARD STYLES */
+#gameContainer {
+  /*
+	width and height of .gameBoardPixel should 1/40 of the width and height of #gameContainer,
+	because it is used in calculation in the jscript.js file
+	*/
   width: 40vw;
   height: 40vw;
   margin: 2vw auto;
@@ -18,21 +23,31 @@ body {
 
 .gameBoardPixel {
   /* background-color: slategrey; */
+  /*
+	width and height of .gameBoardPixel should 1/40 of the width and height of #gameContainer,
+	because it is used in calculation in the jscript.js file
+	*/
   width: 1vw;
   height: 1vw;
   border-radius: 10px;
   float: left;
 }
+/* GAME BOARD STYLES END*/
 
+/* SNAKE STYLES */
 .snakeBodyPixel {
   background-color: #fd6401;
   box-shadow: 0 0 5px #fd6401;
 }
+/* SNAKE STYLES END*/
 
+/* FOOD STYLES */
 .food {
   background-color: #68e768;
 }
+/* FOOD STYLES END*/
 
+/* SCORE STYLES */
 #scoreContainer {
   width: 40vw;
   display: flex;
@@ -53,14 +68,16 @@ body {
   -moz-box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.6);
   box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.6);
 }
+/* SCORE STYLES END */
 
-#mobileControllers {
+/* Hide #onScreenControllers on desktop */
+#onScreenControllers {
   display: none;
 }
 
 @media only screen and (max-width: 768px) {
   /* MOBILE */
-  .gameContainer {
+  #gameContainer {
     width: 80vw;
     height: 80vw;
   }
@@ -74,7 +91,7 @@ body {
     width: 80vw;
   }
 
-  #mobileControllers {
+  #onScreenControllers {
     width: 80vw;
     margin: 5vw auto;
     display: flex;
@@ -82,18 +99,24 @@ body {
     align-items: center;
   }
 
-  #mobileControllers > div {
+  #onScreenControllers > div {
     display: flex;
     flex-direction: column;
   }
 
-  #mobileControllers button {
+  #onScreenControllers button {
     background-color: transparent;
     height: 20vw;
     width: 20vw;
+    font-size: 10vw;
+    border: none;
   }
 
-  #mobileControllers button:focus {
+  #onScreenControllers button:focus {
     outline: none;
+  }
+
+  #onScreenControllers button:active {
+    background-color: slategray;
   }
 }
