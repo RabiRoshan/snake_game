@@ -9,9 +9,19 @@
   <body>
     <div class="gameContainer" id="gameContainer"></div>
 
-    <div class="scoreBoard">Food: <span id="pointsEarned"></span></div>
-    <div class="scoreBoard">Blocks: <span id="blocksTravelled"></span></div>
+    <div id="scoreContainer">
+      <div class="scoreBoard">Food: <span id="pointsEarned">0</span></div>
+      <div class="scoreBoard">Blocks: <span id="blocksTravelled">0</span></div>
+    </div>
 
+    <div id="mobileControllers">
+      <button id="leftButton">◀️</button>
+      <div>
+        <button id="upButton">🔼</button>
+        <button id="downButton">🔽</button>
+      </div>
+      <button id="rightButton">▶️</button>
+    </div>
     <script src="jscript.js"></script>
   </body>
 </html>

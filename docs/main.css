@@ -33,44 +33,30 @@ body {
   background-color: #68e768;
 }
 
-.scoreBoard {
-  width: 15vw;
+#scoreContainer {
+  width: 40vw;
+  display: flex;
   margin: auto;
+  justify-content: space-around;
+}
+
+.scoreBoard {
   border-radius: 10px;
   border: solid 5px slategrey;
   color: dimgray;
-  display: inline-block;
   background-color: #0c1021;
+  display: inline-block;
+  padding: 1vw;
+  width: 40%;
 
   -webkit-box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.6);
   -moz-box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.6);
   box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.6);
 }
-/*
 
-
-#pointsEarned,
-#distance {
-  height: 30px;
-  margin: 0px;
-  font-size: 20px;
-  font-family: cursive;
-  padding: 0px 0px 0px 0px;
+#mobileControllers {
+  display: none;
 }
-
-.points {
-  position: relative;
-  left: 440px;
-  margin: 5px;
-  float: left;
-}
-
-.distance {
-  position: relative;
-  right: 440px;
-  margin: 5px;
-  float: right;
-} */
 
 @media only screen and (max-width: 768px) {
   /* MOBILE */
@@ -82,5 +68,32 @@ body {
   .gameBoardPixel {
     width: 2vw;
     height: 2vw;
+  }
+
+  #scoreContainer {
+    width: 80vw;
+  }
+
+  #mobileControllers {
+    width: 80vw;
+    margin: 5vw auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  #mobileControllers > div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #mobileControllers button {
+    background-color: transparent;
+    height: 20vw;
+    width: 20vw;
+  }
+
+  #mobileControllers button:focus {
+    outline: none;
   }
 }
