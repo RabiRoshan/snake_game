@@ -1,73 +1,86 @@
-body{
-    background-color: darkslategrey;
+body {
+  background-color: darkslategrey;
+  text-align: center;
 }
 
-.container{
-    width: 500px;
-    height: 500px;
-    margin: 30px auto;
-    margin-bottom: 10px;
-    background-color: #0c1021;
+.gameContainer {
+  width: 40vw;
+  height: 40vw;
+  margin: 2vw auto;
+  background-color: #0c1021;
+  border: solid 10px slategrey;
+  border-radius: 10px;
 
-    padding: 0px;
-    border: solid 10px slategrey;
-    border-radius: 10px;
-
-    -webkit-box-shadow: 0px 0px 20px 3px rgba(0,0,0,0.6);
-    -moz-box-shadow: 0px 0px 20px 3px rgba(0,0,0,0.6);
-    box-shadow: 0px 0px 20px 3px rgba(0,0,0,0.6);
+  -webkit-box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.6);
 }
 
-.box{
-    width: 5px;
-    height: 5px;
-    border-radius: 10px;
-    display: inline-block;
-    float: left;
+.gameBoardPixel {
+  /* background-color: slategrey; */
+  width: 1vw;
+  height: 1vw;
+  border-radius: 10px;
+  float: left;
 }
 
-.boxed{
-    background-color: #fd6401;
-    box-shadow: 0 0 5px #fd6401;
+.snakeBodyPixel {
+  background-color: #fd6401;
+  box-shadow: 0 0 5px #fd6401;
 }
 
-.point{
-    background-color: #68e768;
+.food {
+  background-color: #68e768;
 }
 
-.common{
-    height: 30px;
-    width: 200px;
-    margin: auto;
-    border-radius: 10px;
-    border: solid 5px slategrey;
-    color: dimgray;
-    display: inline-block;
+.scoreBoard {
+  width: 15vw;
+  margin: auto;
+  border-radius: 10px;
+  border: solid 5px slategrey;
+  color: dimgray;
+  display: inline-block;
+  background-color: #0c1021;
 
-    background-color: #0C1021;
-    -webkit-box-shadow: 0px 0px 20px 3px rgba(0,0,0,0.6);
-    -moz-box-shadow: 0px 0px 20px 3px rgba(0,0,0,0.6);
-    box-shadow: 0px 0px 20px 3px rgba(0,0,0,0.6);
+  -webkit-box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.6);
+}
+/*
+
+
+#pointsEarned,
+#distance {
+  height: 30px;
+  margin: 0px;
+  font-size: 20px;
+  font-family: cursive;
+  padding: 0px 0px 0px 0px;
 }
 
-#printpoint,#distance{
-    height: 30px;
-    margin: 0px;
-    font-size: 20px;
-    font-family: cursive;
-    padding: 0px 0px 0px 0px;
+.points {
+  position: relative;
+  left: 440px;
+  margin: 5px;
+  float: left;
 }
 
-.points{
-    position: relative;
-    left: 440px;
-    margin: 5px;
-    float: left;
-}
+.distance {
+  position: relative;
+  right: 440px;
+  margin: 5px;
+  float: right;
+} */
 
-.distance{
-    position: relative;
-    right: 440px;
-    margin: 5px;
-    float:right;
+@media only screen and (max-width: 768px) {
+  /* MOBILE */
+  .gameContainer {
+    width: 80vw;
+    height: 80vw;
+  }
+
+  .gameBoardPixel {
+    width: 2vw;
+    height: 2vw;
+  }
 }

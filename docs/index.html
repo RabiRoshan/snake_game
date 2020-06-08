@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html>
-<head lang="en">
-    <meta charset="UTF-8">
+  <head lang="en">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Snake v8</title>
-    <link rel="stylesheet" type="text/css" href="main.css"/>
-</head>
-<body>
-    <div class="container" id="container">
+    <link rel="stylesheet" type="text/css" href="main.css" />
+  </head>
+  <body>
+    <div class="gameContainer" id="gameContainer"></div>
 
-    </div>
-    <div class="marker">
-    <div  class="common points"><p id="printpoint" align="center">0</p></div>
-        <div  class="common distance"><p id="distance" align="center">0</p></div>
-    </div>
-<script src="jscript.js"></script>
-</body>
+    <div class="scoreBoard">Food: <span id="pointsEarned"></span></div>
+    <div class="scoreBoard">Blocks: <span id="blocksTravelled"></span></div>
+
+    <script src="jscript.js"></script>
+  </body>
 </html>

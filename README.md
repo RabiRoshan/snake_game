@@ -1,10 +1,8 @@
-# snake_game
+# Snake Game
 
-Classic nokia snake game using web.
-
-Best result on google chrome.
+**Classic nokia snake game using web.**
 
 ## Note:
 
-The latest version v8 is the working one.
-The docs folder contains the latest working files.
+1. The docs folder contains the latest working files.
+2. Best result on Google Chrome.(Desktop)
