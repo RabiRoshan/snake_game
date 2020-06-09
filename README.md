@@ -1,5 +1,7 @@
 # Snake Game
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE.MD)
+
 **Classic nokia snake game using web.**
 
 ## Note:
