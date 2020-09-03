@@ -75,6 +75,18 @@ body {
   display: none;
 }
 
+.developerDetails {
+  margin-top: 2vw;
+  display: flex;
+  flex-direction: column;
+  color: #0c1021;
+  font-family: monospace;
+}
+
+.developerDetails a {
+  color: #0c1021;
+}
+
 @media only screen and (max-width: 768px) {
   /* MOBILE */
   #gameContainer {

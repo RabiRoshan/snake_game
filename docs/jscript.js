@@ -43,7 +43,7 @@ const DOWN_DIR = 40;
 // Set snake direction initially to right
 let snakeCurrentDirection = RIGHT_DIR;
 
-const changeDirection = newDirectionCode => {
+const changeDirection = (newDirectionCode) => {
   // Change the direction of the snake
   if (newDirectionCode == snakeCurrentDirection) return;
 
@@ -158,7 +158,7 @@ createFood();
 var moveSnakeInterval = setInterval(moveSnake, 80);
 
 // Call change direction function on keyboard key-down event:
-addEventListener("keydown", e => changeDirection(e.keyCode));
+addEventListener("keydown", (e) => changeDirection(e.keyCode));
 
 // ON SCREEN CONTROLLERS:
 const leftButton = document.getElementById("leftButton");
