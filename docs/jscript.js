@@ -9,10 +9,12 @@ let totalDistanceTravelled = 0;
 const gameContainer = document.getElementById("gameContainer");
 
 const createGameBoardPixels = () => {
-  // Populate the [#gameContainer] div with small div's representing game pixels
+  let gamePixelDivs = '';
   for (let i = 1; i <= SQUARE_OF_GAME_PIXEL_COUNT; ++i) {
-    gameContainer.innerHTML = `${gameContainer.innerHTML} <div class="gameBoardPixel" id="pixel${i}"></div>`;
+    gamePixelDivs = `${gamePixelDivs} <div class="gameBoardPixel" id="pixel${i}"></div>`;
   }
+  // Populate the [#gameContainer] div with small div's representing game pixels
+  gameContainer.innerHTML = `${gameContainer.innerHTML} ${gamePixelDivs}`;
 };
 
 // This variable always holds the updated array of game pixels created by createGameBoardPixels() :
